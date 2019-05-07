@@ -12,7 +12,7 @@ function getJokes(e) {
 
   let output = '';
 
-  xhr.open('GET', `http://api.icndb.com/jokes/random/${number}`);
+  xhr.open('GET', `https://api.icndb.com/jokes/random/${number}`, true);
 
   xhr.onload = function() {
     if (this.status === 200) {
